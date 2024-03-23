@@ -1,18 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Business Card</title>
-  </head>
-  <body>
-  <div class="card address">
-    <img src="Image.jpeg" 
-    alt="Gayu Smiling Image " class=" img address">
-  <div class="address" >
-    <h3>Gayathri R</h3>
-    <p class="center">Frontend Developer</p>
-    <h4 class="center" >Tamil Nadu , India</h4>
+
+<head>
+  <title>Career Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="logo-img">
+    <img class="Image2" src="Image2.jpg" alt="Logo">
   </div>
+
+  <div id="body-img">
+    <img class="Image1" src="Image1.avif" alt="Motivation Image">
   </div>
-  </body>
+
+  <h1>
+    About Career
+  </h1>
+  <div id="about">
+    <div id="description">
+      <p style="margin-top: 0px; ">At Career, We're on a mission to build the world's most highly reputed technical
+        university, and we're building
+        it completely online.we offer several beginner friendly courses that are taken try 300,000+ registered users.
+      </p>
+      <p>We also offer 2 industry -focused bootcamps:
+      <ol><a href="">
+          <li>Career Full Stack Developer Bootcamp</li>
+        </a>
+        <a href="">
+          <li>Career Data Science Bootcamp</li>
+        </a>
+      </ol>
+      </p>
+    </div>
+    <div id="about-img">
+      <img class="img3" src="Image3.jpg">
+    </div>
+  </div>
+
+  <h2>
+    Job Opportunities
+  </h2>
+  <div id="jobs">
+    <table id="jobs-table">
+      <tr class="jobs-header-row">
+        <th>Jobs</th>
+        <th>Location</th>
+        <th>Salary</th>
+        <th>Posted On</th>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>Frontend Developer</td>
+        <td>Bengaluru,India</td>
+        <td>₹12,00,000</td>
+        <td>Mar 3,2024</td>
+      </tr>
+      <tr>
+        <td>Full Stack Developer</td>
+        <td>New Delhi,India</td>
+        <td>₹15,00,000</td>
+        <td>Feb 14,2024</td>
+      </tr>
+      <tr>
+        <td>Data Scientist</td>
+        <td>San Francisco,USA</td>
+        <td>$1,75,000</td>
+        <td>Mar 15,2024</td>
+      </tr>
+      <tr>
+        <td>ML Engineer</td>
+        <td>Remote</td>
+        <td>$80,000</td>
+        <td>Jan 26,2024</td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Submit Your Application</h2>
+  <form>
+    <div>
+      <label for="name"> Name</label><br>
+      <input type="text" id="name" name="Full name" class="input-given" required>
+    </div>
+
+    <div>
+      <label for="email"> Email</label><br>
+      <input type="mail" id="mail" name="Email Address" class="input-given" required>
+    </div>
+
+    <div>
+      <label for="phone"> Phone</label><br>
+      <input type="tel" id="phone" name="phone number" class="input-given" placeholder="+910000000000" max="10"
+        required>
+    </div>
+
+    <div>
+      <label for="select"> Position Applied</label><br>
+      <select id="job" name="Job role">
+        <option value="Frontend">Frontend Developer</option>
+        <option value="Fullstack">Fullstack Developer</option>
+        <option value="data scientist">Data Scientist</option>
+        <option value="ML">ML Engineer</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="letter"> Cover Letter</label><br>
+      <textarea type="text" id="cover" name="textarea" rows=" 5" class="input-given" placeholder="Add your cover letter"
+        required></textarea>
+    </div>
+
+    <div>
+      <input type="checkbox">I agree to the <a href="" style="text-decoration: underline;" required>terms and
+        conditions</a>
+    </div>
+
+    <div>
+      <input type="submit" id="submit-btn" name="submit" required>
+    </div>
+  </form>
+
+  <div id="footer">
+    <ul class="footer-link">
+      <a href="">
+        <li>Career</li>
+      </a>
+      <a href="">
+        <li>Programs</li>
+      </a>
+      <a href="">
+        <li>YouTube</li>
+      </a>
+    </ul>
+    <p class="copyright">© 2023 Career</p>
+  </div>
+
+
+
+</body>
+
 </html>
